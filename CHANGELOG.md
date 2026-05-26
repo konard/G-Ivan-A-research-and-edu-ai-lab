@@ -4,12 +4,22 @@ All notable repository governance changes are documented here.
 
 ## Unreleased
 
+No unreleased changes.
+
+## [1.1] - 2026-05-26
+
 ### Added
 
 - Issue #52: draft-концепция `research/mango/taxonomy-concept-2026-05.md`
   для Unified Capability Taxonomy Mango: обзор применимых стандартов,
   мета-модель capability, mapping реальных фич, процесс нормализации,
   интерфейс продуктовых команд, метрики, план пилота и риски.
+- Issue #49: active directory indexes for `projects/`, `research/`,
+  `education/` and `frameworks/` after cleanup of legacy `-old` inputs.
+- Issue #49: active Mango research artifacts in `research/mango/`
+  (`README.md`, `classification.md`, `classification-tz.md`,
+  `requirements-flow.md` and HTML exports) with frontmatter and source
+  traceability.
 - Issue #47: проект `projects/repo-development/` с навигационным `README.md` и
   отчётом аудита миграции `docs/migration-audit-2026-05.md` (чек-лист
   согласованности с `CONCEPT.md`, матрица перекрёстных ссылок, таблица миграции
@@ -58,8 +68,13 @@ All notable repository governance changes are documented here.
 
 ### Changed
 
-- Previous tracked files сохранены с суффиксом `-old` для анализа и выборочной
-  миграции.
+- Issue #49: migration state updated from "legacy files preserved for analysis"
+  to "legacy files removed or promoted"; `projects/mango/README.md` now links
+  to active project/research navigation instead of `projects/README-old.md`.
+- Issue #49: `tools/validate-repository-structure.sh` now registers promoted
+  active files and fails if tracked `-old` files are reintroduced.
+- Issue #47: previous tracked files were renamed with suffix `-old` for audit
+  and selective migration before cleanup issue #49.
 - Active navigation теперь указывает на `governance/` вместо `meta/` и на
   `tools/` вместо `tests/`.
 - Standards рассматриваются как плоский registry, пока operational use не
@@ -67,8 +82,10 @@ All notable repository governance changes are documented here.
 
 ### Removed
 
-- Old content не удалялся в этой миграции; previous files были переименованы
-  для review.
+- Issue #49: removed legacy root files, old GitHub templates, `docs-old/`,
+  `meta-old/`, `tests-old/`, `experiments-old/`, old education package files,
+  repository-governance archive candidates, `.gitkeep` placeholders and other
+  superseded `-old` inputs according to the migration audit categories.
 
 ## Связанные документы
 
@@ -87,8 +104,6 @@ All notable repository governance changes are documented here.
 
 ## TODO
 
-- Проанализировать `-old` files и перенести только содержание, которое остается
-  операционно полезным.
 - Добавить concrete artifact templates после появления повторяющихся работ и
   стабильных потребностей.
 - Заменить license placeholder после решения Founder & PO.
