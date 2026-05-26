@@ -1,0 +1,69 @@
+---
+status: canonical
+version: 1.0
+updated: 2026-05-26
+ai-generated: false
+---
+
+# Проект: Развитие репозитория
+
+Версия: 1.0
+
+Дата: 2026-05-26
+
+`projects/repo-development/` координирует работы по эволюции структуры,
+стандартов и процессов самого репозитория `hybrid-Intelligence-lab`. В отличие
+от продуктовых spoke-проектов (например, `projects/mango/`), этот проект
+рассматривает сам hub как объект развития: его навигацию, governance-правила и
+миграцию.
+
+Файл является навигацией, а не контрактом: обязательные правила остаются в
+[CONCEPT.md](../../CONCEPT.md), [governance/REPO_MODEL.md](../../governance/REPO_MODEL.md)
+и [standards/README.md](../../standards/README.md).
+
+## 🎯 Назначение
+
+Координация работ по эволюции структуры, стандартов и процессов репозитория:
+аудит согласованности, подготовка к удалению `-old` файлов и сбор предложений
+по оптимизации без их немедленной реализации.
+
+## 📋 Текущие приоритеты
+
+- Аудит согласованности миграции (см. отчёт ниже).
+- Предложения по оптимизации — фиксируются как рекомендации, реализуются только
+  после согласования.
+- Подготовка к удалению `-old` файлов после подтверждения, что ценное
+  содержание перенесено.
+
+## 🗂️ Навигация
+
+| Документ | Назначение |
+| --- | --- |
+| [docs/migration-audit-2026-05.md](docs/migration-audit-2026-05.md) | Отчёт аудита миграции: согласованность с `CONCEPT.md`, матрица ссылок, таблица `-old`, рекомендации. |
+| [governance/REPO_MODEL.md](../../governance/REPO_MODEL.md) | Модель структуры репозитория и Anti-Inflation principle. |
+| [governance/ARTIFACT_MAP.md](../../governance/ARTIFACT_MAP.md) | Карта артефактов: где что лежит и как связано. |
+| [standards/ISSUE_WORKFLOW.md](../../standards/ISSUE_WORKFLOW.md) | Жизненный цикл задач: статусы и правила переходов. |
+| [.github/ISSUE_TEMPLATE/task.yml](../../.github/ISSUE_TEMPLATE/task.yml) | Предложить улучшение через Issue. |
+
+## 🔄 Процесс
+
+Развитие репозитория следует принципу `human-in-control` и Anti-Inflation:
+артефакт или изменение появляется только после зафиксированной операционной
+боли и согласования.
+
+1. Зафиксируй идею или проблему в Issue (см. [task.yml](../../.github/ISSUE_TEMPLATE/task.yml)).
+2. Предложи рекомендацию в отчёте или Issue.
+3. Получи ревью и явное согласование (`human-in-control`).
+4. Реализуй изменение отдельным reviewable pull request.
+
+Порядок статусов задачи соответствует
+[standards/ISSUE_WORKFLOW.md](../../standards/ISSUE_WORKFLOW.md).
+
+## Связанные артефакты
+
+- [CONCEPT.md](../../CONCEPT.md)
+- [governance/REPO_MODEL.md](../../governance/REPO_MODEL.md)
+- [governance/ARTIFACT_MAP.md](../../governance/ARTIFACT_MAP.md)
+- [standards/README.md](../../standards/README.md)
+- [standards/ISSUE_WORKFLOW.md](../../standards/ISSUE_WORKFLOW.md)
+- [projects/mango/README.md](../mango/README.md)

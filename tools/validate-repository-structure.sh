@@ -46,6 +46,8 @@ is_active_file() {
     standards/TEAM_CONTRACT.md | \
     standards/ISSUE_WORKFLOW.md | \
     projects/mango/README.md | \
+    projects/repo-development/README.md | \
+    projects/repo-development/docs/migration-audit-2026-05.md | \
     governance/REPO_MODEL.md | \
     governance/ARTIFACT_MAP.md | \
     .github/ISSUE_TEMPLATE/task.yml | \
