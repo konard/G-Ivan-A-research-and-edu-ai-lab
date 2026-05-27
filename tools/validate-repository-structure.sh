@@ -64,10 +64,12 @@ is_active_file() {
     projects/mango/README.md | \
     projects/mango/experiments/user-story_gen-from-raw-request_2026-05-26.md | \
     projects/mango/experiments/tz-stats-prototype-2026-05.md | \
+    projects/mango/experiments/usecase_gen-stepwise-alignment_2026-05-26.md | \
     projects/mango/prompts/user-story-generator_exp-2026-05.md | \
     projects/mango/standards/classification-glossary.md | \
     projects/mango/kb/.gitkeep | \
     projects/mango/prompts/.gitkeep | \
+    projects/mango/prompts/usecase-stepwise-generator_exp-2026-05.md | \
     projects/mango/docs/.gitkeep | \
     projects/mango/experiments/.gitkeep | \
     projects/mango/decisions/.gitkeep | \
@@ -141,10 +143,12 @@ required_files=(
   "projects/mango/README.md"
   "projects/mango/experiments/user-story_gen-from-raw-request_2026-05-26.md"
   "projects/mango/experiments/tz-stats-prototype-2026-05.md"
+  "projects/mango/experiments/usecase_gen-stepwise-alignment_2026-05-26.md"
   "projects/mango/prompts/user-story-generator_exp-2026-05.md"
   "projects/mango/standards/classification-glossary.md"
   "projects/mango/kb/.gitkeep"
   "projects/mango/prompts/.gitkeep"
+  "projects/mango/prompts/usecase-stepwise-generator_exp-2026-05.md"
   "projects/mango/docs/.gitkeep"
   "projects/mango/experiments/.gitkeep"
   "projects/mango/decisions/.gitkeep"
